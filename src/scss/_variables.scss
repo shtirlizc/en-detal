@@ -10,4 +10,15 @@ $container-tablet: 720px;
 
 :root {
   --delay: 0.2s;
+
+  --font: "GoogleSans", sans-serif;
+
+  --text-primary: rgba(0, 0, 0, 0.87);
+  --text-secondary: rgba(0, 0, 0, 0.67);
+
+  --primary: #139967;
+
+  --container: 1300px;
+
+  --gap: 20px;
 }

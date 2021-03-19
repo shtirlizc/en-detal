@@ -1,0 +1,44 @@
+._logo {
+  display: inline-block;
+
+  &:hover {
+    ._logo__name {
+      span {
+        &:first-child {
+          color: var(--text-primary);
+        }
+
+        &:last-child {
+          color: var(--primary);
+        }
+      }
+    }
+  }
+
+  &__name {
+    display: block;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 28px;
+
+    span {
+      text-transform: uppercase;
+      transition: color var(--delay);
+
+      &:first-child {
+        color: var(--primary);
+      }
+
+      &:last-child {
+        color: var(--text-primary);
+      }
+    }
+  }
+
+  &__desc {
+    display: block;
+    font-size: 12px;
+    line-height: 15px;
+    color: var(--text-secondary);
+  }
+}
