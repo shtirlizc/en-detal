@@ -6,6 +6,18 @@
 @import "body";
 @import "container";
 
+@import "components/btn";
+@import "components/input";
 @import "components/nav";
 @import "components/header";
 @import "components/logo";
+@import "components/title";
+@import "components/text-content";
+@import "components/catalog";
+@import "components/map";
+@import "components/footer";
+
+@import "pages/main-banner";
+@import "pages/main-catalog";
+@import "pages/main-content";
+@import "pages/main-partners";

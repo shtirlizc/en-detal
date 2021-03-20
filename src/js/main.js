@@ -1,5 +1,5 @@
-// import { mobileMenu } from "./mobileMenu";
+import { map } from "./map";
 
 window.addEventListener("load", () => {
-  // mobileMenu();
+  map();
 });

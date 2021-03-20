@@ -1,0 +1,63 @@
+._map {
+  margin-top: 84px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  &__body {
+    background-color: var(--text-primary);
+    color: #ffffff;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  &__content {
+  }
+
+  &__contacts {
+    margin: 0;
+    max-width: calc(var(--container) / 2 - calc(var(--gap) / 2));
+    width: 100%;
+    padding: 45px 45px 45px 0;
+
+    dt {
+      font-size: 14px;
+      line-height: 18px;
+    }
+
+    dd {
+      margin: 4px 0 0;
+
+      &:not(:last-child) {
+        margin-bottom: 20px;
+      }
+
+      a,
+      address {
+        color: inherit;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 23px;
+      }
+
+      a {
+        transition: color var(--delay);
+
+        &:hover {
+          color: var(--primary);
+        }
+      }
+
+      address {
+        font-style: normal;
+      }
+    }
+  }
+
+  &__layout {
+    *[class*="-inner-panes"] {
+      > *:not([class*="-places-pane"]) {
+        filter: grayscale(100%);
+      }
+    }
+  }
+}

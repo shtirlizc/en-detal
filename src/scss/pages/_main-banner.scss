@@ -1,0 +1,39 @@
+._main-banner {
+  display: grid;
+  grid-template-columns: 1fr 7fr 5fr;
+  background-color: var(--primary);
+  border-radius: 8px;
+
+  &__content {
+    padding: 44px 0;
+    color: #ffffff;
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 40px;
+  }
+
+  &__desc {
+    font-size: 16px;
+    line-height: 24px;
+    margin: 26px 0 0;
+  }
+
+  &__more {
+    margin-top: 34px;
+  }
+
+  &__image {
+    position: relative;
+    overflow: hidden;
+
+    img {
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+}

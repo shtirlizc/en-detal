@@ -1,0 +1,23 @@
+._btn {
+  @include clean;
+
+  background-color: #ffffff;
+  height: 44px;
+  border-radius: 22px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 32px;
+  font-family: var(--font);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  color: var(--text-primary);
+  cursor: pointer;
+  transition: color var(--delay);
+
+  &:hover {
+    color: var(--primary);
+  }
+}
