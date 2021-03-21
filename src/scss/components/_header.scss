@@ -4,6 +4,10 @@
   align-items: center;
   gap: var(--gap);
   height: 106px;
+  background-color: #ffffff;
+  position: sticky;
+  top: 0;
+  z-index: 10;
 
   &__contacts {
     display: flex;
