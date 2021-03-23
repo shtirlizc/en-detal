@@ -1,0 +1,28 @@
+._sidebar {
+  @include clr;
+
+  display: inline-block;
+
+  &__item {
+    &.active {
+      a {
+        background-color: var(--primary);
+        color: #ffffff;
+      }
+    }
+
+    a {
+      display: block;
+      font-size: 14px;
+      line-height: 18px;
+      color: var(--text-primary);
+      padding: 12px;
+      transition: background-color var(--delay), color var(--delay);
+
+      &:hover {
+        background-color: var(--primary);
+        color: #ffffff;
+      }
+    }
+  }
+}

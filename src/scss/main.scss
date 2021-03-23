@@ -6,6 +6,8 @@
 @import "body";
 @import "container";
 
+// components
+
 @import "components/btn";
 @import "components/input";
 @import "components/breadcrumbs";
@@ -18,8 +20,13 @@
 @import "components/map";
 @import "components/footer";
 @import "components/page";
+@import "components/sidebar";
+
+// pages
 
 @import "pages/main-banner";
 @import "pages/main-catalog";
 @import "pages/main-content";
 @import "pages/main-partners";
+
+@import "pages/catalog-inner";

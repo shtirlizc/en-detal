@@ -1,6 +1,12 @@
 ._page {
   padding-top: 44px;
 
+  &__side {
+  }
+
+  &__main {
+  }
+
   &__breadcrumbs {
   }
 
@@ -13,5 +19,15 @@
 
   &__content {
     margin-top: 44px;
+
+    &--small {
+      margin-top: 28px;
+    }
+  }
+
+  &--grid {
+    display: grid;
+    grid-template-columns: 3fr 9fr;
+    gap: var(--gap);
   }
 }

@@ -1,0 +1,37 @@
+._catalog-inner {
+  &__files {
+    margin-top: 44px;
+
+    &-title {
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 23px;
+    }
+
+    &-items {
+      @include clr;
+
+      --padding: 7.5px;
+
+      margin-top: calc(24px - var(--padding));
+      column-count: 2;
+      column-gap: var(--gap);
+      padding-right: 10.5%;
+    }
+
+    &-item {
+      a {
+        display: inline-block;
+        padding: var(--padding) 0;
+        font-size: 14px;
+        line-height: 18px;
+        color: var(--text-primary);
+        transition: color var(--delay);
+
+        &:hover {
+          color: var(--primary);
+        }
+      }
+    }
+  }
+}
