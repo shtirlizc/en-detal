@@ -1,0 +1,17 @@
+._breadcrumbs {
+  font-size: 12px;
+  line-height: 15px;
+
+  a {
+    color: var(--primary);
+    transition: color var(--delay);
+
+    &::after {
+      content: " / ";
+    }
+
+    &:hover {
+      color: var(--text-primary);
+    }
+  }
+}

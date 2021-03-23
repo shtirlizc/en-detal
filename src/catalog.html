@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">
+  @include('./view/head.html')
+  <body>
+    @include('./view/nav.html')
+
+    <div class="_container">
+      @include('./view/header.html', {"mod": ""})
+
+      <div class="_page">
+        <div class="_page__breadcrumbs">
+          <div class="_breadcrumbs">
+            <a href="#">Главная</a>
+            <span>Каталог</span>
+          </div>
+        </div>
+        <h1 class="_page__title">Каталог</h1>
+        <div class="_page__content">
+          @include('./view/catalog.html')
+          <br />
+          @include('./view/catalog.html')
+        </div>
+      </div>
+    </div>
+
+    @include('./view/map.html') @include('./view/footer.html')
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

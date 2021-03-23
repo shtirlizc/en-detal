@@ -8,6 +8,7 @@
   position: sticky;
   top: 0;
   z-index: 10;
+  border-bottom: 1px solid #e4e4e4;
 
   &__contacts {
     display: flex;
@@ -55,5 +56,9 @@
         color: var(--primary);
       }
     }
+  }
+
+  &--without-underline {
+    border-bottom: none;
   }
 }

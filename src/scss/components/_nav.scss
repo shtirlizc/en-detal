@@ -66,21 +66,24 @@
         background-color: #ffffff;
       }
 
-      > span {
-        position: relative;
-        cursor: pointer;
-        z-index: 1;
+      &--wrap {
+        > a,
+        span {
+          position: relative;
+          cursor: pointer;
+          z-index: 1;
 
-        &::after {
-          content: "";
-          display: block;
-          width: 0;
-          height: 0;
-          border: 3px solid transparent;
-          border-top-color: var(--text-secondary);
-          margin-left: 5px;
-          transform: translateY(2px);
-          transition: border var(--delay);
+          &::after {
+            content: "";
+            display: block;
+            width: 0;
+            height: 0;
+            border: 3px solid transparent;
+            border-top-color: var(--text-secondary);
+            margin-left: 5px;
+            transform: translateY(2px);
+            transition: border var(--delay);
+          }
         }
       }
     }
@@ -105,6 +108,7 @@
       a {
         display: inline-block;
         padding: 10px;
+        width: max-content;
       }
     }
   }
