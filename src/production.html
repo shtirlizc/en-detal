@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+  @include('./view/head.html')
+  <body>
+    @include('./view/nav.html')
+
+    <div class="_container">
+      @include('./view/header.html', {"mod": ""})
+
+      <div class="_page">
+        <div class="_page__breadcrumbs">
+          <div class="_breadcrumbs">
+            <a href="#">Главная</a>
+            <span>Продукция в наличии</span>
+          </div>
+        </div>
+        <h1 class="_page__title">Продукция в наличии</h1>
+        <div class="_page__content _text-content">
+          <p>
+            В настоящий момент на складе производственно-технического
+            объединения "ЭнергоРемонт" есть в наличии следующая готовая
+            продукция.
+          </p>
+          <p>
+            Для заказа свяжитесь с нами по телефону
+            <strong>+7 (347) 246-55-66</strong> (Отдел готовой продукции) или по
+            e-mail:
+            <a href="mailto:1@en-detal.ru">1@en-detal.ru</a>
+          </p>
+          <table>
+            <thead>
+              <tr>
+                <th>НАИМЕНОВАНИЕ</th>
+                <th>МАТЕРИАЛ</th>
+                <th>НТД</th>
+                <th>Единицы измерения</th>
+                <th>Количество</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Труба 133х4</td>
+                <td>20</td>
+                <td>ТУ 14-3-190-2004</td>
+                <td>Договорная</td>
+                <td>Договорная</td>
+              </tr>
+              <tr>
+                <td>Отвод гнутый 90-28х3-100х100х436-R150</td>
+                <td>20</td>
+                <td>020 СТО ЦКТИ 321.02-2009</td>
+                <td>46900</td>
+                <td>46900</td>
+              </tr>
+              <tr>
+                <td>Отвод ОГ 45 1220(20,8К55)-5,6-0,6-5DN-2850/2850-У</td>
+                <td></td>
+                <td>
+                  ТУ 1469-006-56802935-2010 с заводской изоляцией ППУ ТУ
+                  2313-005-5680235-2006
+                </td>
+                <td>Договорная</td>
+                <td>Договорная</td>
+              </tr>
+              <tr>
+                <td>Отвод ОГ 15 530(25,8К88)-5,6-0,6-5DN-2850/2850-У</td>
+                <td></td>
+                <td>
+                  ТУ 1469-006-56802935-2010 с заводской изоляцией ППУ ТУ
+                  2313-005-5680235-2006
+                </td>
+                <td>44600</td>
+                <td>44600</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    @include('./view/map.html') @include('./view/footer.html')
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
