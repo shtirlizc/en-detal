@@ -37,15 +37,15 @@
 
   ul,
   ol {
-    :last-child {
+    margin: 1.2em 0;
+    padding-left: 36px;
+
+    &:last-child {
       margin-bottom: 0;
     }
   }
 
   ul {
-    padding-left: 20px;
-    margin: 1.2em 0;
-
     li {
       font-size: 16px;
       line-height: 24px;
@@ -54,6 +54,14 @@
       &::marker {
         content: "- ";
       }
+    }
+  }
+
+  ol {
+    li {
+      font-size: 14px;
+      line-height: 18px;
+      margin: 0;
     }
   }
 
