@@ -5,20 +5,22 @@
   background-color: #ffffff;
   z-index: 11;
 
-  @include mobile {
+  @include touch {
     --padding: 20px;
 
-    box-shadow: 0 6px 10px -3px rgba(0, 0, 0, 0.15);
+    box-shadow: var(--box-shadow);
     background-color: #ffffff;
     position: fixed;
     top: 0;
     right: -100%;
     height: 100vh;
     transition: right var(--delay);
+    overflow-x: hidden;
+    overflow-y: scroll;
   }
 
   &.active {
-    @include mobile {
+    @include touch {
       right: 0;
     }
   }
@@ -38,7 +40,7 @@
     display: flex;
     border-bottom: 1px solid #e4e4e4;
 
-    @include mobile {
+    @include touch {
       flex-direction: column;
       align-items: flex-end;
       padding: 10px 0;
@@ -48,7 +50,7 @@
     &-item {
       position: relative;
 
-      @include mobile {
+      @include touch {
         width: 100%;
       }
 
@@ -64,7 +66,7 @@
         > span {
           padding-right: 0;
 
-          @include mobile {
+          @include touch {
             padding-right: var(--padding);
           }
         }
@@ -109,7 +111,7 @@
         padding: 0 var(--padding);
         background-color: #ffffff;
 
-        @include mobile {
+        @include touch {
           justify-content: flex-end;
           height: 44px;
         }
@@ -133,7 +135,7 @@
             transform: translateY(2px);
             transition: border var(--delay);
 
-            @include mobile {
+            @include touch {
               display: none;
             }
           }
@@ -157,7 +159,7 @@
     pointer-events: none;
     transition: opacity var(--delay), transform var(--delay);
 
-    @include mobile {
+    @include touch {
       display: none;
     }
 

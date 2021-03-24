@@ -3,20 +3,32 @@
   grid-template-columns: 1fr 7fr 5fr;
   background-color: var(--primary);
   border-radius: 8px;
+  overflow: hidden;
 
-  @include mobile {
-    display: none;
+  @include touch {
+    margin-top: 20px;
+    grid-template-columns: 0 8fr 4fr;
+    gap: calc(var(--gap) / 2);
   }
 
   &__content {
     padding: 44px 0;
     color: #ffffff;
+
+    @include mobile {
+      padding: 20px 0;
+    }
   }
 
   &__title {
     font-weight: 700;
     font-size: 36px;
     line-height: 40px;
+
+    @include mobile {
+      font-size: 32px;
+      line-height: 1.2em;
+    }
   }
 
   &__desc {

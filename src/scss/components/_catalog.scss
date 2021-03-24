@@ -4,6 +4,14 @@
   gap: var(--gap);
   overflow: hidden;
 
+  @include mobile {
+    grid-template-columns: 1fr;
+  }
+
+  @include tablet-only {
+    grid-template-columns: 1fr 1fr;
+  }
+
   &__item {
     position: relative;
     display: grid;

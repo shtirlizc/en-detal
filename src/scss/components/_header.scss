@@ -1,30 +1,47 @@
 ._header {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  align-items: center;
-  gap: var(--gap);
-  height: 106px;
   background-color: #ffffff;
   position: sticky;
   top: 0;
   z-index: 10;
-  border-bottom: 1px solid #e4e4e4;
+  box-shadow: var(--box-shadow-transparent);
+  transition: box-shadow var(--delay);
 
-  @include mobile {
-    grid-template-columns: 1fr auto;
-    box-shadow: 0 6px 10px -3px rgba(0, 0, 0, 0.15);
-    margin: 0 calc(-1 * var(--gap) / 2);
-    padding: calc(var(--gap) / 2);
+  @include touch {
+    box-shadow: var(--box-shadow);
+  }
+
+  &__content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    gap: var(--gap);
+    height: 106px;
+    border-bottom: 1px solid #e4e4e4;
+
+    @include touch {
+      grid-template-columns: 1fr auto;
+      margin: 0 calc(-1 * var(--gap) / 2);
+      padding: calc(var(--gap) / 2);
+      border-bottom: none;
+    }
+
+    @include desktop-only {
+      grid-template-columns: 3fr 3fr 4fr;
+    }
+
+    &--without-underline {
+      border-bottom: none;
+    }
   }
 
   &__logo {
-    @include mobile {
+    @include touch {
       display: none;
     }
   }
 
   &__search {
-    @include mobile {
+    @include touch {
       display: none;
     }
   }
@@ -34,12 +51,12 @@
     justify-content: flex-end;
     align-items: center;
 
-    @include mobile {
+    @include touch {
       justify-content: flex-start;
     }
 
     &-feedback {
-      @include mobile {
+      @include touch {
         display: none;
       }
     }
@@ -50,7 +67,7 @@
       flex-direction: column;
       align-items: flex-end;
 
-      @include mobile {
+      @include touch {
         margin-left: 0;
         align-items: flex-start;
       }
@@ -87,7 +104,7 @@
     }
   }
 
-  &--without-underline {
-    border-bottom: none;
+  &--shadow {
+    box-shadow: var(--box-shadow);
   }
 }

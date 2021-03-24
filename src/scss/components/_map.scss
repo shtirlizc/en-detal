@@ -4,7 +4,8 @@
   grid-template-columns: 1fr 1fr;
 
   @include mobile {
-    display: none;
+    margin-top: 40px;
+    display: block;
   }
 
   &__body {
@@ -12,16 +13,21 @@
     color: #ffffff;
     display: flex;
     justify-content: flex-end;
-  }
 
-  &__content {
+    @include mobile {
+      padding: 0 calc(var(--gap) / 2);
+    }
   }
 
   &__contacts {
     margin: 0;
     max-width: calc(var(--container) / 2 - calc(var(--gap) / 2));
     width: 100%;
-    padding: 45px 45px 45px 0;
+    padding: 45px 45px 45px calc(var(--gap) / 2);
+
+    @include fullhd {
+      padding-left: 0;
+    }
 
     dt {
       font-size: 14px;
@@ -58,6 +64,11 @@
   }
 
   &__layout {
+    @include mobile {
+      height: 100vw;
+      max-height: 500px;
+    }
+
     *[class*="-inner-panes"] {
       > *:not([class*="-places-pane"]) {
         filter: grayscale(100%);
