@@ -1,0 +1,14 @@
+._feedback-btn {
+  @include clean;
+
+  font-size: 14px;
+  white-space: nowrap;
+  color: var(--primary);
+  cursor: pointer;
+  border-bottom: 1px solid;
+  transition: border var(--delay);
+
+  &:hover {
+    border-bottom: 1px solid transparent;
+  }
+}

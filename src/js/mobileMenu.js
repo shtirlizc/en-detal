@@ -1,6 +1,6 @@
 export function mobileMenu() {
   const [toggleBtn] = document.getElementsByClassName("_header__toggle-btn");
-  const [bg] = document.getElementsByClassName("_header__bg");
+  const [bg] = document.getElementsByClassName("_nav-bg");
   const [nav] = document.getElementsByClassName("_nav");
   const [body] = document.getElementsByTagName("body");
 

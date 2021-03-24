@@ -4,6 +4,10 @@
   background-color: var(--primary);
   border-radius: 8px;
 
+  @include mobile {
+    display: none;
+  }
+
   &__content {
     padding: 44px 0;
     color: #ffffff;

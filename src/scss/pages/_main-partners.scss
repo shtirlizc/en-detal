@@ -1,6 +1,10 @@
 ._main-partners {
   margin-top: 68px;
 
+  @include mobile {
+    display: none;
+  }
+
   &__items {
     margin-top: 20px;
     padding: 15px 0;

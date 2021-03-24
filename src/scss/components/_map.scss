@@ -3,6 +3,10 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
 
+  @include mobile {
+    display: none;
+  }
+
   &__body {
     background-color: var(--text-primary);
     color: #ffffff;

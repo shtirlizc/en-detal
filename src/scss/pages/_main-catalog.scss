@@ -1,7 +1,8 @@
 ._main-catalog {
   margin-top: 20px;
 
-  &__content {
+  @include mobile {
+    display: none;
   }
 
   &__more {
