@@ -2,11 +2,9 @@
 <html lang="ru">
   @include('./view/head.html')
   <body>
-    @include('./view/nav.html')
+    @include('./view/nav.html') @include('./view/header.html', {"mod": ""})
 
     <div class="_container">
-      @include('./view/header.html', {"mod": ""})
-
       <div class="_page">
         <div class="_page__breadcrumbs">
           <div class="_breadcrumbs">

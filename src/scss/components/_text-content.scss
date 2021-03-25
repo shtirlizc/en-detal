@@ -33,6 +33,10 @@
   img {
     float: left;
     margin-right: 30px;
+
+    @include mobile {
+      float: none;
+    }
   }
 
   ul,
@@ -67,6 +71,7 @@
 
   table {
     border-collapse: collapse;
+    width: 100%;
     margin: 30px 0;
 
     &:last-child {
@@ -80,6 +85,12 @@
     }
 
     thead {
+      @include touch {
+        left: -9999px;
+        position: absolute;
+        visibility: hidden;
+      }
+
       tr {
         th {
           font-weight: 500;
@@ -96,13 +107,48 @@
 
     tbody {
       tr {
+        @include touch {
+          border-bottom: 0;
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          margin-bottom: 40px;
+        }
+
         &:nth-child(2n) {
-          background-color: #eceef1;
+          @include desktop {
+            background-color: #eceef1;
+          }
         }
 
         td {
           font-size: 12px;
           line-height: 12px;
+
+          @include touch {
+            border: 1px solid #e4e4e4;
+            margin: 0 -1px -1px 0;
+            padding: 35px 10px 15px;
+            position: relative;
+            width: 50%;
+          }
+
+          span {
+            background-color: #eceef1;
+            color: dimgrey;
+            display: none;
+            font-size: 10px;
+            font-weight: bold;
+            padding: 5px;
+            position: absolute;
+            text-transform: uppercase;
+            top: 0;
+            left: 0;
+
+            @include touch {
+              display: block;
+            }
+          }
         }
       }
     }

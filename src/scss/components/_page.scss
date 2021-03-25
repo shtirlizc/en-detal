@@ -1,13 +1,14 @@
 ._page {
   padding-top: 44px;
 
-  &__side {
+  @include mobile {
+    padding-top: 20px;
   }
 
   &__main {
-  }
-
-  &__breadcrumbs {
+    @include mobile {
+      margin-top: 20px;
+    }
   }
 
   &__title {
@@ -29,5 +30,9 @@
     display: grid;
     grid-template-columns: 3fr 9fr;
     gap: var(--gap);
+
+    @include mobile {
+      display: block;
+    }
   }
 }
