@@ -15,9 +15,19 @@
   line-height: 18px;
   color: var(--text-primary);
   cursor: pointer;
-  transition: color var(--delay);
+  transition: all var(--delay);
 
   &:hover {
     color: var(--primary);
+  }
+
+  &--primary {
+    border: 1px solid var(--primary);
+    background-color: var(--primary);
+    color: #ffffff;
+
+    &:hover {
+      background-color: #ffffff;
+    }
   }
 }
