@@ -4,46 +4,21 @@
     <div class="_feedback">
       <h3 class="_feedback__title _title">Заказать звонок</h3>
       <div class="_feedback__form">
-        <div class="_form">
-          <div class="_form__group">
-            <div class="_input">
-              <input
-              type="text"
-              name="name"
-              id="name"
-              placeholder=" "
-              required
-              />
-              <label for="name">Имя</label>
-            </div>
-          </div>
-          <div class="_form__group">
-            <div class="_input">
-              <input
-              type="text"
-              name="name"
-              id="phone"
-              class="js-phone-mask"
-              placeholder=" "
-              required
-              />
-              <label for="phone">Телефон</label>
-            </div>
-          </div>
-          <div class="_form__group">
-            <div class="_input">
-              <textarea name="message" id="message" placeholder=" "></textarea>
-              <label for="message">Сообщение</label>
-            </div>
-          </div>
-          <div class="_form__group _form__group--right">
-            <button class="_btn _btn--primary">Отправить</button>
-          </div>
-        </div>
+        [[!AjaxForm? 
+          &form=`fb-form`
+          &snippet=`FormIt` 
+          &hooks=`FormItSaveForm,email`
+          &emailSubject=`Заявка с сайта`
+          &emailTo=`[[++email]]`
+          &emailFrom=`no-reply@en-detal.ru`
+          &emailTpl=`fb-email`
+          &validationErrorMessage=`В форме содержатся ошибки!`
+          &successMessage=`Письмо успешно отправлено`
+        ]]
       </div>
       <p class="_feedback__help">
         Нажимая на кнопку, вы соглашаетесь с
-        <a href="#">Политикой конфиденциальности</a>
+        <a href="[[~19]]" target="_blank">Политикой конфиденциальности</a>
       </p>
     </div>
   </div>
@@ -53,7 +28,7 @@
   <div class="_modal__bg"></div>
   <div class="_modal__wrap">
     <div class="_success">
-      <h3 class="_success__title _title">Ваша сообщение успешно отправлено</h3>
+      <h3 class="_success__title _title">Ваше сообщение успешно отправлено</h3>
       <div class="_success__image">
         <svg width="120" height="120" x="0px" y="0px" viewBox="0 0 507.2 507.2">
           <circle style="fill: #32ba7c" cx="253.6" cy="253.6" r="253.6" />
