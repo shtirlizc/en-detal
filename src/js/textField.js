@@ -13,16 +13,21 @@ export function textField() {
 
     return [...inputs, ...textareas];
   };
+
   const fields = combineFields(document.getElementsByClassName("_input"));
 
   Array.from(fields).forEach((field) => {
     const [fieldItem] = field;
 
+    if (fieldItem.value === "") {
+      fieldItem.classList.add("empty");
+    }
+
     fieldItem.addEventListener("change", (evt) => {
       if (evt.target.value === "") {
-        evt.target.classList.remove("fill");
+        evt.target.classList.add("empty");
       } else {
-        evt.target.classList.add("fill");
+        evt.target.classList.remove("empty");
       }
     });
   });

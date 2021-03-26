@@ -1,0 +1,57 @@
+._search {
+  .sisea-results {
+    font-size: 16px;
+    line-height: 24px;
+
+    .sisea-highlight {
+      font-weight: 700;
+    }
+  }
+
+  .sisea-paging {
+    font-size: 16px;
+    line-height: 24px;
+
+    .sisea-result-pages {
+      margin-right: 8px;
+    }
+
+    a {
+      color: var(--primary);
+      border-bottom: 1px solid transparent;
+      transition: border var(--delay);
+
+      &:hover {
+        border-bottom: 1px solid;
+      }
+    }
+  }
+
+  .sisea-results-list {
+    margin: 30px 0;
+
+    .sisea-result {
+      h3 {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 23px;
+
+        a {
+          color: var(--primary);
+          border-bottom: 1px solid transparent;
+          transition: border var(--delay);
+
+          &:hover {
+            border-bottom: 1px solid;
+          }
+        }
+      }
+
+      p {
+        font-size: 16px;
+        line-height: 24px;
+        margin: 0.2em 0 1.4em;
+      }
+    }
+  }
+}

@@ -6,10 +6,10 @@
       </div>
 
       <div class="_header__search">
-        <div class="_input">
-          <input type="text" name="search" id="search" />
-          <label for="search">Что ищем?</label>
-        </div>
+        [[!SimpleSearchForm?
+          &landing=`20`
+          &tpl=`search__form`
+        ]]
       </div>
 
       <div class="_header__contacts">
