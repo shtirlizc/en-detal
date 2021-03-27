@@ -2,6 +2,12 @@
   @include clr;
 
   display: inline-block;
+  position: sticky;
+  top: 126px;
+
+  @include mobile {
+    position: static;
+  }
 
   &__item {
     &.active {
