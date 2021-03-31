@@ -21,7 +21,7 @@
         </div>
       </div>
       <div class="_main-banner__image">
-        <img src="[[*index-image]]" alt="[[*index-image-alt]]" />
+        <img src="[[*index-image]]" alt="[[*index-image-alt]]" loading="lazy" width="320" height="320" />
       </div>
     </main>
 

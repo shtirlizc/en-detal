@@ -27,7 +27,7 @@
       </div>
       <div class="_header__toggle">
         <button class="_header__toggle-btn">
-          <img src="/app/img/icons/menu.svg" alt="Иконка мобильного меню" width="32" />
+          <img src="/app/img/icons/menu.svg" alt="Иконка мобильного меню" width="32" height="32" />
         </button>
       </div>
     </div>

@@ -4,7 +4,7 @@
 		<span class="_catalog__item-desc">[[+tv.catalog-price]]</span>
 	</span>
 	<span class="_catalog__item-image">
-		<img src="[[+tv.catalog-image]]" alt="[[+pagetitle]]" />
+		<img src="[[+tv.catalog-image]]" alt="[[+pagetitle]]" loading="lazy" width="200" height="160" />
 	</span>
 	<span class="_catalog__item-arrow"></span>
 </a>
