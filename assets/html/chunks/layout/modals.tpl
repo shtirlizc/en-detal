@@ -12,6 +12,7 @@
           &emailTo=`[[++email]]`
           &emailFrom=`no-reply@en-detal.ru`
           &emailTpl=`fb-email`
+          &frontend_js=`assets/js/default.js`
           &validationErrorMessage=`В форме содержатся ошибки!`
           &successMessage=`Письмо успешно отправлено`
         ]]

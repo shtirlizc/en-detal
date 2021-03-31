@@ -1,3 +1,8 @@
+import $ from "jquery";
+
+global.jQuery = $;
+global.$ = $;
+
 import { map } from "./map";
 import { mobileMenu } from "./mobileMenu";
 import { scroll } from "./scroll";

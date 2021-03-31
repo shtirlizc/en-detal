@@ -41,6 +41,7 @@ export function map() {
         );
 
       myMap.geoObjects.add(myPlacemark);
+      myMap.options.set("suppressMapOpenBlock", true);
     });
   }
 }
