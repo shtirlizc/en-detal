@@ -21,7 +21,7 @@
 
   &__contacts {
     margin: 0;
-    max-width: calc(var(--container) / 2 - calc(var(--gap) / 2));
+    max-width: calc(var(--container) / 2);
     width: 100%;
     padding: 45px 45px 45px calc(var(--gap) / 2);
 
