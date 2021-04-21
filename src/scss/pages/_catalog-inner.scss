@@ -28,8 +28,32 @@
         color: var(--text-primary);
         transition: color var(--delay);
 
+        position: relative;
+        padding-left: 32px;
+
+        &::before {
+          content: "";
+          position: absolute;
+          width: 24px;
+          height: 24px;
+          border-radius: 50%;
+          border: 1px solid var(--primary);
+          left: 0;
+          top: 50%;
+          transform: translateY(-50%);
+          background-image: url("../img/icons/gear.svg");
+          background-size: 18px;
+          background-position: center;
+          background-repeat: no-repeat;
+          transition: transform calc(2 * var(--delay));
+        }
+
         &:hover {
           color: var(--primary);
+
+          &::before {
+            transform: translateY(-50%) rotate(180deg);
+          }
         }
       }
     }
