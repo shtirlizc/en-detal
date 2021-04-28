@@ -1,10 +1,12 @@
 ._map {
-  margin-top: 84px;
+  padding-top: 84px;
+  margin-bottom: 0;
+  margin-top: auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
 
   @include mobile {
-    margin-top: 40px;
+    padding-top: 40px;
     display: block;
   }
 

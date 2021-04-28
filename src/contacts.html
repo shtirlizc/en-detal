@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+  @include('./view/head.html')
+  <body>
+    @include('./view/nav.html') @include('./view/header.html', {"mod": ""})
+
+    <div class="_container">
+      <div class="_page">
+        <div class="_page__breadcrumbs">
+          <div class="_breadcrumbs">
+            <a href="#">Главная</a>
+            <span>Контакты</span>
+          </div>
+        </div>
+        <h1 class="_page__title">Контакты</h1>
+        <div class="_page__content _text-content">
+          <h3>Производственно-техническое объединение "ЭнергоДеталь"</h3>
+          <p>
+            <a href="files/Karta_partnera.pdf" target="_blank" rel="noopener">
+              Скачать платежные реквизиты
+            </a>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    @include('./view/map.html') @include('./view/footer.html')
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
