@@ -20,7 +20,7 @@
     ]]
     
     <div class="_nav__feedback">
-      [[$feedback-btn]]
+      <!-- [[$feedback-btn]] -->
     </div>
   </div>
 </nav>

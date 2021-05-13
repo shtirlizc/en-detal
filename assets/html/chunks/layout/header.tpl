@@ -14,7 +14,7 @@
 
       <div class="_header__contacts">
         <div class="_header__contacts-feedback">
-          [[$feedback-btn]]
+          <!-- [[$feedback-btn]] -->
         </div>
         <div class="_header__contacts-list">
           <a href="tel:[[++phone]]" class="_header__contacts-phone">
