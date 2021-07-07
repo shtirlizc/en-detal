@@ -20,7 +20,6 @@
     ]]
     
     <div class="_nav__feedback">
-      <!-- [[$feedback-btn]] -->
     </div>
   </div>
 </nav>

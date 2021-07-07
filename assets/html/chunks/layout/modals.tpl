@@ -10,7 +10,7 @@
           &hooks=`FormItSaveForm,email`
           &emailSubject=`Заявка с сайта`
           &emailTo=`[[++email]]`
-          &emailFrom=`no-reply@en-detal.ru`
+          &emailFrom=`no-reply@detali-truboprovodov.ru`
           &emailTpl=`fb-email`
           &frontend_js=`assets/js/default.js`
           &validationErrorMessage=`В форме содержатся ошибки!`
